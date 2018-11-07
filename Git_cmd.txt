@@ -1,0 +1,32 @@
+git init
+
+git add .   // ajout de tous les nouveaux fichiers
+
+git commit -m "ajout de mon css" //Faire un commit qui décrit la mise à jour de votre fichier avec la commande  
+
+git commit -a -m ""//  mettre à jour un fichier que vous aviez déjà ajouté à l'index
+
+git log  //historique des modif
+
+
+git checkout SHADuCommit   //postioné sur un vieux commit
+
+git checkout master   // retour branche principal
+
+
+git revert SHAduCommit  // reprend la dernière version ud commit avant modif (mais en créer un nouveau)
+
+git commit --amend -m "New message"   //modifier le commentaire
+
+git reset --hard  //annuler tous les changements pas encore commités
+
+
+
+git clone "LienGitHub"  //recupérer le code d'un github sur notre pc
+
+git push origin master // envoie des modif sur GitHub
+
+git pull origin master // recupere en local les dernieres modif sur GiT (pratique si plusieurs dev)
+
+
+gitignore  //ignorer un dossier de config (pw, donnée d'initialisation, api key etc)
