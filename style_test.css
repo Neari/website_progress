@@ -1,0 +1,115 @@
+@font-face{
+    font-family: "brilliant_r";
+    src: url('fonts/brilliant_regular.otf');
+}
+
+h2, em, nav, a{
+
+    color: blueviolet;
+    font-style:italic; /* italic ou normal ou oblique */        
+}
+
+.salutation{
+    
+    color: forestgreen;
+}
+
+.souligne{
+    text-decoration: underline;    
+}
+
+a:hover{
+    text-decoration:overline;
+    color:blueviolet;
+    font-weight: bold;
+}
+
+a:active{
+    background-color: coral;
+}
+
+a:visited{
+    color:cornflowerblue;
+}
+
+p{
+    width: 50%; /* px ou % */
+    min-width: 400px;  /* min ou max // width ou height */
+    border: 6px darkgreen dashed;
+    padding: 1px; /* padding = marge intérieur ;;; margin = marge exterieur */
+    margin: 0px 40px 30px 10px; /* dans l'ordre : haut   bas   gauche   droite */
+}
+
+.imageflottante{
+    float:left;
+}
+
+.dessous{
+    /*clear:both;*/
+}
+
+.order{
+    font-weight: bold;
+    color:orange;
+    border: 6px darkblue dashed;
+    width: 500px; /* largeur block */
+    height: 120px; /* hauteur block */
+    margin: auto;
+    overflow: auto; /* visible ou hidden ou scroll ou auto // DEPASSEMENT VERS LE BAS */
+    word-wrap: break-word; /* DEPASSEMENT HORIZONTAL*/
+}
+
+
+.para1{
+    font-size: 14px; /*ou des relatives : xx-small; x-small; small; medium; large; x-large; xx-large */
+    color:white;
+    font-family: Arial, "Arial Black", Georgia, Impact, sans-serif;
+    border: 6px blue dashed;    
+}
+
+h1{
+    font-size: 100px; /* ou 0.6em ou 1.3em etc */
+    font-family: "brilliant_r";
+    color:cornflowerblue;
+    font-weight: bold; /* en gras */
+    text-decoration: underline; /* underline ou line-through (=barré) ou overline ou blink */
+    text-align: center;
+}
+
+
+body{
+    /*background-color: black;*/
+    background: url(pictures/back_storm.jpg) fixed; /* fixe l'image de fond */
+}
+
+#conteneur{
+    color: darkgreen;
+    border: 6px darkgreen dashed;
+    height: 60px;
+    padding:10px;
+    display: flex;
+    flex-direction:row; /* row ou column ou reverse */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.element:nth-child(2){
+    background-color: blue;
+    align-self: flex-start;
+    flex:1; /* occupe tout l'espace restant */ 
+}
+
+#top{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.top_element:nth-child(1){
+    align-self:center;
+    flex:1;
+}
+
+.top_element:nth-child(2){
+    position:fixed;
+}
+

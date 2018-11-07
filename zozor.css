@@ -1,0 +1,32 @@
+nav
+{
+    width: 150px;
+    border: 1px solid black;
+    display:inline-block;
+    vertical-align: top;
+    
+}
+
+section
+{
+    border: 1px solid blue;
+    display: inline-block;
+    vertical-align: top;
+}
+
+element{
+    position:absolute; /* absolute ou fixed ou relative*/
+    right:0px;
+    bottom:0px;  /* placement du block absolue sur la page*/
+    z-index:1; /* ordre de prio en cas de chevauchement au meme endroit (1 etant le plus en dessous)*/
+}
+
+strong{
+    background-color: red;
+    color:yellow;
+    position:relative;
+    left:55px;
+    top:10px;
+}
+
+/* DESIGN HTML/CSS : https://html5up.net/ */ 

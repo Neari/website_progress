@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>hihi</title>
+</head>
+
+<body>
+    <div id="top_title">
+        <div class="top_element">
+            <header>
+                <h1>stardust lost in space</h1><!-- top -->
+            </header>
+        </div>
+
+        <div class="top_element">
+            <nav>
+                <!-- MENU -->
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="page2.html">Page 2</a></li>
+                    <li><a href="page3.html">Page 3</a></li>
+                    <li><a href="home_test.html">test page</a></li>
+                    <li><a href="zozor.html">zozor</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <section>
+
+        <h2>It's all gonna be ok ...</h2>
+        <div id="conteneur">
+            <div class="element">ELEMENT 1</div>
+            <div class="element">ELEMENT 2</div>
+            <div class="element">ELEMENT 3</div>
+        </div>
+    </section>
+    <p> DESSUS DU TABLEAU</p>
+    <section id="tableau">
+        <table>
+            <caption>People from any galaxy</caption>
+            <thead>
+                <!-- EN TETE TABLEAU -->
+                <tr>
+                    <th>Nom</th>
+                    <th>Age</th>
+                    <th>Planete</th>
+                </tr>
+            </thead>
+
+            <tfoot>
+                <!-- BAS DU TABLEAU -->
+                <tr>
+                    <td>xxx</td>
+                    <td>yyy</td>
+                    <td>zzz</td>
+                </tr>
+            </tfoot>
+
+            <tbody>
+                <!-- CORPS DU TABLEAU -->
+                <tr>
+                    <td>Yoda</td>
+                    <td>2200 ans</td>
+                    <td>Dagoba</td>
+                </tr>
+                <tr>
+                    <td>Obi</td>
+                    <td>33 ans</td>
+                    <td>Coruscant</td>
+                </tr>
+            </tbody>
+        </table>
+        <p> DESSOUS DU TABLEAU</p>
+    </section>
+
+    <section id="formulaire">
+        <form method="post" action="traitement.php">
+
+
+            <fieldset>
+                <legend>Your details</legend>
+                <label for="pseudo">Choose your nickname : </label>
+                <input type="text" name="pseudo" id="pseudo" placeholder="Ex : darkyLOL" size="25" maxlength="10" required /><br /><br />
+
+                <label for="pw">Choose your password : </label>
+                <input type="password" name="pw" id="pw" size="25" maxlength="16" required /><br /><br />
+
+                <label for="mail">Choose your email :</label>
+                <input type="email" name="mail" id="mail" size="25" maxlength="25" required /><br /><br /> <!-- Existe aussi en : "tel" ou "url" ou "number" ou "range" ou "color" ou "date" ou "search" ou "checkbox" -->
+
+                <label for="value">Choose your value :</label>
+                <input type="range" name="value" id="value" min="10" max="110" step="1" /><br /><br />
+
+                <label for="best_color">Choose your favorite color :</label>
+                <input type="color" name="best_color" id="best_color" /><br /><br />
+
+                <label for="actual_date">Choose the date:</label>
+                <input type="date" name="actual_date" id="actual_date" /><br /><br /><br />
+
+                <label for="enhanc">Few lines about you? </label>
+                <textarea name="enhanc" id="enhanc"></textarea><br /><br /><br /><br />
+
+            </fieldset>
+            <fieldset>
+                <legend>Other informations</legend>
+                What classes are you playing : <br />
+                <input type="checkbox" name="paladin" id="paladin" /> <label for="paladin">Paladin</label><br />
+                <input type="checkbox" name="druid" id="druid" /> <label for="druid">Druid</label><br />
+                <input type="checkbox" name="rogue" id="rogue" /> <label for="rogue">Rogue </label><br />
+                <input type="checkbox" name="mage" id="mage" /> <label for="mage">Mage</label><br /><br />
+
+                What's your age ? : <br />
+                <input type="radio" name="age" value="less15" id="less15" /><label for="moins15">Less than 15y</label><br />
+                <input type="radio" name="age" value="medium15-25" id="medium15-25" /><label for="medium15-25">Between 15-25y</label><br />
+                <input type="radio" name="age" value="medium26-40" id="medium26-40" /><label for="medium26-40">Between 26-40y</label><br />
+                <input type="radio" name="age" value="more40" id="more40" /><label for="more40">More than 40y</label><br /><br /><br />
+
+                <label for="pays">What's your country ?</label><br />
+                <select name="pays" id="pays" required>
+                    <optgroup label="Europe">
+                        <option value="france" selected>France</option>
+                        <option value="spain">Spain</option>
+                        <option value="italy">Italy</option>
+                        <option value="UK">United Kingdom</option>
+                    </optgroup>
+                    <optgroup label="America">
+                        <option value="canada">Canada</option>
+                        <option value="USA">United States of America</option>
+                    </optgroup>
+                    <optgroup label="Asia">
+                        <option value="China">China</option>
+                        <option value="japon">Japon</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <input type="submit" value="Submit" id="validation" /> <!-- Boutton pour envoyer, existe aussi "button" (javascript) ou "image" (=submit mais remplacé par image de notre choix) -->
+        </form>
+    </section>
+
+
+    <aside>
+        <!-- Info complementaires (generalement sur coté) -->
+    </aside>
+
+    <article>
+        <!-- importer articler depuis un autre site -->
+    </article>
+
+
+</body>
+
+<footer></footer>
+
+</html>

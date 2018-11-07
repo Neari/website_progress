@@ -1,0 +1,213 @@
+/* Définition des polices personnalisées */
+@font-face{
+    font-family: "brilliant_r";
+    src: url('fonts/brilliant_regular.otf');
+}
+
+body{
+    /*background-color: black;*/
+    background: url(pictures/back_storm.jpg) fixed; /* fixe l'image de fond */
+    color:white;
+}
+
+/* HEADER */
+#top_title{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;    
+}
+
+.top_element:nth-child(1){ /* title */
+    align-self:center;
+    flex:1;    
+}
+
+.top_element:nth-child(2){   /* menu */
+    position:absolute;
+}
+
+#top_title ul{
+    list-style-type: none;
+    padding-left: 10px;   
+    flex-direction: row;
+    display: flex;  
+    border-right:2px white solid;
+}
+
+.top_element li{
+    background-color: none;    
+    border:2px white solid;
+    border-right:0px white solid;    
+    text-align: center;   
+    justify-content: center;  
+    width: 100px;
+    height: 25px;   
+    line-height: 20px;
+}
+
+#top_title a{
+    color:cornflowerblue;
+    font-weight: bold;
+    text-decoration: none;    
+}
+
+#top_title a:hover{
+    color:orange;
+    font-weight: bold;
+    font-size:1.4em;
+    text-decoration: underline;
+}
+
+#top_title h1{
+    font-size: 100px; /* ou 0.6em ou 1.3em etc */
+    font-family: "brilliant_r";
+    color:cornflowerblue;
+    font-weight: bold; /* en gras */
+    text-decoration: underline; /* underline ou line-through (=barré) ou overline ou blink */
+    text-align: center;    
+}
+
+/* LIENS */
+a:hover{
+    text-decoration:underline;
+    color:blueviolet;
+    font-weight: bold;
+}
+
+a:active{
+    background-color: whitesmoke;
+}
+
+a:visited{
+    color:yellow;    
+}
+
+/* Corps */
+#corps h1, h2, em, #corps a{
+
+    color: forestgreen;
+    font-style:bold; /* italic ou normal ou oblique */        
+}
+
+.salutation{
+    
+    color: forestgreen;
+}
+
+p{
+    width: 50%; /* px ou % */
+    min-width: 400px;  /* min ou max // width ou height */    
+    padding: 1px; /* padding = marge intérieur ;;; margin = marge exterieur */
+    margin: 0px 40px 30px 10px; /* dans l'ordre : haut   bas   gauche   droite */
+    color:white;
+}
+
+.imageflottante{
+    float:left;
+}
+
+.para1{
+    font-size: 14px; /*ou des relatives : xx-small; x-small; small; medium; large; x-large; xx-large */
+    color:white;
+    font-family: Arial, "Arial Black", Georgia, Impact, sans-serif;       
+}
+
+.order{
+    font-weight: bold;
+    color:orange;    
+    width: 500px; /* largeur block */
+    height: 120px; /* hauteur block */
+    margin: auto;
+    overflow: auto; /* visible ou hidden ou scroll ou auto // DEPASSEMENT VERS LE BAS */
+    word-wrap: break-word; /* DEPASSEMENT HORIZONTAL*/
+}
+
+.order p{
+    color:orange;
+}
+
+
+/* Page 2 */
+#conteneur{
+    color: yellow;    
+    height: 60px;
+    width: 600px;
+    padding:10px;
+    display: flex;
+    flex-direction:row; /* row ou column ou reverse */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.element:nth-child(2){    
+    align-self: center;
+}
+
+/* TABLEAU */
+table{
+    border-collapse: collapse;
+    caption-side: bottom;
+}
+td, th{
+    border: 2px solid orange;
+}
+
+textarea{
+    width: 200px;
+    height: 50px;
+}
+
+input#paladin + label {
+    color:hotpink;    
+}
+
+input#druid + label {
+    color:orange;
+}
+
+input#rogue + label {
+    color:yellow;
+}
+
+input#mage + label {
+    color:dodgerblue;
+}
+
+input:checked+ label{
+    font-weight: bold;   
+}
+
+fieldset{
+    width: 300px;    
+}
+
+:required{
+    background-color:#CE7BF8;
+}
+
+#validation{
+    width: 100px;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 5px;    
+}
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1024 */
+@media screen and (max-width: 1024px){
+    p{
+        color:cornflowerblue;        
+        font-size: 1.2em;
+    }
+}
+
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
+@media all and (min-width: 1024px) and (max-width: 1280px)
+
+/* Sur les téléviseurs */
+@media tv
+
+/* Sur tous types d'écrans orientés verticalement */
+@media all and (orientation: portrait)
+    
+/* Sur tous les smartphone */  
+@media all and (max-width: 480px)
