@@ -83,7 +83,7 @@ a:visited{
 }
 
 /* Corps */
-#corps h1, h2, em, #corps a{
+#corps h1, h2, em, #corps a, #java a{
 
     color: forestgreen;
     font-style:bold; /* italic ou normal ou oblique */        
